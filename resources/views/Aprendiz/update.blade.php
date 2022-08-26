@@ -8,39 +8,46 @@
         <div class="ui raised form segment">
             //Envia de manera privada el id.
             <input type="hidden" name="id" value="{{$updateAprendiz->id}}">
+
             <div class="field">
-                <label class="ui blue ribbon label">Codigo_Aprendiz</label>
-                <input type="text" id="Codigo_Aprendiz" name="Codigo_Aprendiz" value="{{$updateAprendiz->Codigo_Aprendiz}}">
+                <label class="ui blue ribbon label">Codigo Aprendiz</label>
+                <input type="text" id="id" name="id" value="{{$updateAprendiz->id}}">
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Nombre_Aprendiz</label>
-                <input type="text" id="Nombre_Aprendiz" name="Nombre_Aprendiz" value="{{$updateAprendiz->Nombre_Aprendiz}}">
+                <label class="ui blue ribbon label">Nombre Aprendiz</label>
+                <input type="text" id="APREN_Nombre" name="APREN_Nombre" value="{{$updateAprendiz->APREN_Nombre}}">
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Documento_Aprendiz</label>
-                <input type="text" name="Documento_Aprendiz" id="Documento_Aprendiz" value="{{$updateAprendiz->Documento_Aprendiz}}" >
+                <label class="ui blue ribbon label">Documento Aprendiz</label>
+                <input type="text" name="APREN_Documento" id="APREN_Documento" value="{{$updateAprendiz->APREN_Documento}}" >
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Tipo_Documento</label>
-                <input type="text" name="Tipo_Documento" id="Tipo_Documento" value="{{$updateAprendiz->Tipo_Documento}}" >
+                <label class="ui blue ribbon label">Tipo Documento</label>
+                <input type="text" name="APREN_Tipo_Documento" id="APREN_Tipo_Documento" value="{{$updateAprendiz->APREN_Tipo_Documento}}" >
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Genero_Aprendiz</label>
-                <input type="text" name="Genero_Aprendiz" id="Genero_Aprendiz" value="{{$updateAprendiz->Genero_Aprendiz}}" >
+                <label class="ui blue ribbon label">Genero Aprendiz</label>
+                <input type="text" name="APREN_Genero" id="APREN_Genero" value="{{$updateAprendiz->APREN_Genero}}" >
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Estado_Aprendiz</label>
-                <input type="text" name="Estado_Aprendiz" id="Estado_Aprendiz" value="{{$updateAprendiz->Estado_Aprendiz}}" >
+                <label class="ui blue ribbon label">Estado Aprendiz</label>
+                <input type="text" name="APREN_Estado" id="APREN_Estado" value="{{$updateAprendiz->APREN_Estado}}" >
             </div>
 
             <div class="field">
-                <label class="ui blue ribbon label">Identificador_Unico_Ficha</label>
-                <input type="text" name="Identificador_Unico_Ficha" id="Identificador_Unico_Ficha" value="{{$updateAprendiz->Identificador_Unico_Ficha}}" >
+                <label class="ui blue ribbon label">Foto</label>
+                <input type="text" name="APREN_Foto" id="APREN_Foto" value="{{$updateAprendiz->APREN_Foto}}" >
+            </div>
+
+                //Modificar segun como se realice para una llave foranea
+            <div class="field">
+                <label class="ui blue ribbon label">Identificador Unico Ficha</label>
+                <input type="text" name="id_ficha" id="id_ficha" value="{{$updateAprendiz->id_ficha}}" >
             </div>
 
 

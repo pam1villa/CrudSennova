@@ -10,13 +10,16 @@ class AprendizController extends Controller
     public function InsertApre(Request $aprendiz)
     {
         $instanciaaprendiz = new App\Aprendiz;
-        $instanciaaprendiz->Codigo_Aprendiz = $aprendiz->Codigo_Aprendiz;
-        $instanciaaprendiz->Nombre_Aprendiz = $aprendiz->Nombre_Aprendiz;
-        $instanciaaprendiz->Documento_Aprendiz = $aprendiz->Documento_Aprendiz;
-        $instanciaaprendiz->Tipo_Documento = $aprendiz->Tipo_Documento;
-        $instanciaaprendiz->Genero_Aprendiz = $aprendiz->Genero_Aprendiz;
-        $instanciaaprendiz->Estado_Aprendiz = $aprendiz->Estado_Aprendiz;
-        $instanciaaprendiz->Identificador_Unico_Ficha = $aprendiz->Identificador_Unico_Ficha;
+        $instanciaaprendiz->id = $aprendiz->id;
+        $instanciaaprendiz->APREN_Nombre = $aprendiz->APREN_Nombre;
+        $instanciaaprendiz->APREN_Documento = $aprendiz->APREN_Documento;
+        $instanciaaprendiz->APREN_Tipo_Documento = $aprendiz->APREN_Tipo_Documento;
+        $instanciaaprendiz->APREN_Genero = $aprendiz->APREN_Genero;
+        $instanciaaprendiz->APREN_Estado = $aprendiz->APREN_Estado;
+        $instanciaaprendiz->APREN_Foto = $aprendiz->APREN_Foto;
+
+        //LLave foranea para relacionar tablas Aprendiz con ficha (1 ficha tiene muchos aprendices)
+        $instanciaaprendiz->id_ficha = $aprendiz->id_ficha;
 
 
         $instanciaaprendiz->save();
@@ -49,13 +52,15 @@ class AprendizController extends Controller
     {
         //Creamos una instancia al proveedor para poder acceder a los metodos que tiene y acceder a sus atributos.
         $instanciaaprendiz = App\Aprendiz::FindOrFail($aprendiz->id);
-        $instanciaaprendiz->Codigo_Aprendiz = $aprendiz->Codigo_Aprendiz;
-        $instanciaaprendiz->Nombre_Aprendiz = $aprendiz->Nombre_Aprendiz;
-        $instanciaaprendiz->Documento_Aprendiz = $aprendiz->Documento_Aprendiz;
-        $instanciaaprendiz->Tipo_Documento = $aprendiz->Tipo_Documento;
-        $instanciaaprendiz->Genero_Aprendiz = $aprendiz->Genero_Aprendiz;
-        $instanciaaprendiz->Estado_Aprendiz = $aprendiz->Estado_Aprendiz;
-        $instanciaaprendiz->Identificador_Unico_Ficha = $aprendiz->Identificador_Unico_Ficha;
+        $instanciaaprendiz->id = $aprendiz->id;
+        $instanciaaprendiz->APREN_Nombre = $aprendiz->APREN_Nombre;
+        $instanciaaprendiz->APREN_Documento = $aprendiz->APREN_Documento;
+        $instanciaaprendiz->APREN_Tipo_Documento = $aprendiz->APREN_Tipo_Documento;
+        $instanciaaprendiz->APREN_Genero = $aprendiz->APREN_Genero;
+        $instanciaaprendiz->APREN_Estado = $aprendiz->APREN_Estado;
+        $instanciaaprendiz->APREN_Foto = $aprendiz->APREN_Foto;
+
+        $instanciaaprendiz->id_ficha = $aprendiz->id_ficha;
 
         $instanciaaprendiz->update();
 

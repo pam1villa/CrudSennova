@@ -2,7 +2,7 @@
 @section('contenido')
 
 <div class="ui piled text container segment">
-    <h1 class="center">Registro Centro De Formacion</h1>
+    <h1 class="center">Registro Centro De Formación</h1>
     <form action="{{ route('InsertCentroFormacion') }}" method="POST">
     @csrf
         <div class="ui raised form segment">

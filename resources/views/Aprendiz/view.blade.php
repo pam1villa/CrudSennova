@@ -15,13 +15,15 @@
 <table class="ui blue table">
     <thead>
         <tr>
-            <th>Codigo_Aprendiz</th>
-            <th>Nombre_Aprendiz</th>
-            <th>Documento_Aprendiz</th>
-            <th>Tipo_Documento</th>
-            <th>Genero_Aprendiz</th>
-            <th>Estado_Aprendiz</th>
-            <th>Identificador_Unico_Ficha</th>
+            <th>id</th>
+            <th>APREN_Nombre</th>
+            <th>APREN_Documento</th>
+            <th>APREN_Tipo_Documento</th>
+            <th>APREN_Genero</th>
+            <th>APREN_Estado</th>
+            <th>APREN_Foto</th>
+
+            <th>id_ficha</th>
 
             <th>Acciones</th>
     </tr></thead>
@@ -29,13 +31,15 @@
     
     @foreach ($objetoretornado as $aprendiz)
             <tr>
-            <td>{{ $aprendiz->Codigo_Aprendiz }}</td>
-            <td>{{ $aprendiz->Nombre_Aprendiz }}</td>
-            <td>{{ $aprendiz->Documento_Aprendiz }}</td>
-            <td>{{ $aprendiz->Tipo_Documento }}</td>
-            <td>{{ $aprendiz->Genero_Aprendiz }}</td>
-            <td>{{ $aprendiz->Estado_Aprendiz }}</td>
-            <td>{{ $aprendiz->Identificador_Unico_Ficha }}</td>
+            <td>{{ $aprendiz->id }}</td>
+            <td>{{ $aprendiz->APREN_Nombre }}</td>
+            <td>{{ $aprendiz->APREN_Documento }}</td>
+            <td>{{ $aprendiz->APREN_Tipo_Documento }}</td>
+            <td>{{ $aprendiz->APREN_Genero }}</td>
+            <td>{{ $aprendiz->APREN_Estado }}</td>
+            <td>{{ $aprendiz->APREN_Foto }}</td>
+
+            <td>{{ $aprendiz->id_ficha }}</td>
 
             <td>
                 
